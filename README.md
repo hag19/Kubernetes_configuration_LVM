@@ -88,11 +88,8 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ## 9. Configure Containerd Storage
 ```bash
-sudo rsync -av /var/lib/containerd/ /mnt/kubs/containerd/
 sudo mkdir -p /etc/containerd
 sudo containerd config default | sudo tee /etc/containerd/config.toml
-sudo sed -i 's|root = "/var/lib/containerd"|root = "/mnt/kubs/containerd"|' /etc/containerd/config.toml
-sudo chown -R $USER:$USER /mnt/kubs/containerd
 sudo systemctl restart containerd
 ```
 
