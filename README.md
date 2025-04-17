@@ -57,6 +57,12 @@ net.ipv4.ip_forward = 1
 net.bridge.bridge-nf-call-ip6tables = 1
 EOF
 sudo sysctl --system
+sudo apt install ufw -y
+sudo ufw allow 22
+sudo systemctl enable ufw
+sudo systemctl start ufw
+sudo ufw start
+sudo ufw enable
 ```
 
 ## 7. Install Containerd
