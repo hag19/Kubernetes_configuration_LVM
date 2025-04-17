@@ -30,6 +30,8 @@ df -h /mnt/kubs
 sudo chown -R $USER:$USER /mnt/kubs
 sudo chmod -R 775 /mnt/kubs
 sudo setfacl -Rdm u:$USER:rwx /mnt/kubs
+sudo mkdir /mnt/kubs/k8s
+sudo chown hag:hag /mnt/kubs/k8s
 ```
 
 ## 4. System Preparation
