@@ -1,6 +1,4 @@
 Here's your Kubernetes setup guide formatted in Markdown, with added steps for proper user permissions:
-
-```markdown
 # Kubernetes Cluster Setup with LVM Storage
 
 ## 1. Prepare LVM Storage
