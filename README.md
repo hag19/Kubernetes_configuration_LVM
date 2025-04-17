@@ -2,7 +2,7 @@ Here's your Kubernetes setup guide formatted in Markdown, with added steps for p
 # Kubernetes Cluster Setup with LVM Storage
 
 ## 1. Prepare LVM Storage
-```bash
+```sh
 sudo pvcreate /dev/sda
 sudo vgcreate vg_kubs /dev/sda
 sudo lvcreate -l 100%FREE -n lv_kubs vg_kubs
