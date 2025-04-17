@@ -137,7 +137,6 @@ sudo ufw reload
 kubectl get nodes
 kubectl get pods -A
 ```
-```
 
 ### Key Permission Notes:
 1. The `/mnt/kubs` directory is owned by your user with 775 permissions
